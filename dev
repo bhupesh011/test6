@@ -67,3 +67,21 @@ public class inher {
 
 
 }
+package devv;
+
+	import java.util.HashMap;
+	public class hashmap {
+
+		public static void main(String[] args) {
+		HashMap<Integer,String> obj = new HashMap<Integer,String>();
+		obj.put(10, "gzgd");
+		obj.put(12, "lae");
+		System.out.println("class with rollno and name"+obj);
+		System.out.println(obj);
+		//System.out.println("size of map is:- "obj.size());
+		}
+	}
+	//for(String i:obj.keySet())/
+	//System.out.println("key"+i+"value"+obj.get(i));//}
+	//}
+	//}
