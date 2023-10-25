@@ -1,0 +1,69 @@
+package java;
+
+public class inher {
+	class maths{
+		   void	addnumber(int X,int Y){
+				System.out.println("X+y="+(X+Y));	
+				}
+		   void addnumber(int X,int Y,int Z) {
+			   System.out.println("X+Y+Z="+(X+Y+Z));
+		   }
+		   void addnumber(int X,int Y,int Z,int W) {
+			   System.out.println("X+Y+Z+W="+(X+Y+Z+W));
+		   }
+		   void maths(String name,int code){
+			 System.out.println("enter subject code:"+"enter name:"+name+":"+code);
+			}
+		   void maths(int code,int trcode){
+			   System.out.println("enter subject code:"+"enter name:"+trcode+":"+code);
+			   
+			   
+		   }
+		}
+
+		class algebra extends maths{
+			void typeofmaths(){
+				System.out.println("algebra paper of 100 marks");
+			}
+			void level(){
+				System.out.println("level-medium");
+			}
+			
+		}
+		class geometry extends maths{
+			void typeofmaths(){
+				System.out.println("geometry paper of 100 marks");
+				
+			}
+			void description() {
+				System.out.println("subject covers maths of figures");
+			}
+		}
+
+
+		public class practical {
+
+			public static void main(String[] args) {
+			maths math=new maths();
+			math.addnumber(2, 30);
+			math.addnumber(4, 4, 3);
+			math.addnumber(1, 20, 10, 10);
+		      algebra obj=new algebra();
+		      obj.addnumber(12, 15);
+		      obj.addnumber(2, 20, 10);
+		      obj.addnumber(2, 03, 03, 02);
+		      obj.typeofmaths();
+		      obj.level();
+		      algebra maths1=new algebra();
+		      maths1.maths("kapil", 10);
+		      algebra maths2=new algebra();
+		      maths2.maths(20, 30);
+		      geometry obj1=new geometry();
+		      obj1.typeofmaths();
+		      obj1.description();
+		      }
+
+		}
+
+
+}
